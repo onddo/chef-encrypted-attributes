@@ -35,6 +35,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'ffi-yajl', '~> 1.0'
   s.add_dependency 'chef', chef_version
   s.add_dependency 'mixlib-shellout', '< 1.6.1' if RUBY_VERSION < '1.9.3'
+  s.add_dependency 'ohai', '< 8' if RUBY_VERSION < '2'
 
   s.add_development_dependency 'rake', '~> 10.0'
   s.add_development_dependency 'chef-zero', '~> 3.2'
